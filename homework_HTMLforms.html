@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./HW_static/HwMain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>YOU HAVE WON A BRAND NEW CAR!!</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrtuuQxu9T1Bg6Rd2yqTdV3ub1CAuTBomBw&s" alt="picture of a car" width="400">
+    </header>
+    <main>
+        <h3>Please enter your information below to claim your new car</h3>
+
+        <form action="/submit" method="GET">
+            <label for="name">Name (required):</label>
+            <input type="text" placeholder="First and Last name" autocomplete="on" required>
+            <div role="alert" aria-live="assertive"></div>
+
+            <label for="address">Address (required):</label>
+            <input type="text" name="addres" autocomplete="on" placeholder="123 Main St." required>
+            <div role="alert" aria-live="assertive"></div>
+
+            <label for="email">Email (required):</label>
+            <input type="email" name="email" autocomplete="on" placeholder="johndoe@gmail.com" required>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <label for="subscribe">Subscribe to receive future emails with more contests</label>
+            <br>
+            <input type="checkbox" id ="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" id ="no" name="no" value="yes">
+            <label for="no">Not right now</label>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+            <hr>
+            <h3>Vehicle Options</h3>
+            <label for="Car"><strong>Choose which vehicle you would like</strong></label>
+            <select name="Car" id="Car" aria-label="Choose which vehicle you would like">
+                <option value="Car choice">Choose option</option>
+                <option value="Ford">2024 Ford Mustang</option>
+                <option value="Jeep">2024 Jeep Wrangler</option>
+                <option value="Dodge">2024 Dodge Charger</option>
+                <option value="Tesla">2024 Tesla Model 3</option>
+            </select>
+            <br>
+
+            <h4>Next, choose the color you want.</h4>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Red</label>
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">White</label>
+            <input type="radio" id="black" name="color" value="black">
+            <label for="black">Black</label>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Blue</label>
+            <div role="alert" aria-live="assertive"></div>
+
+            <h4>Now choose the color for the pearlescent.</h4>
+            <label for="pearlescent">Pearlescent Color:</label>
+            <input type="color" id="pearlescent" name="pearlescent" value="#ff0000" placeholder="Select a color">
+
+            <h4>Your new car comes with free airfresheners. Please choose how many you would like.</h4>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name='quantity' placeholder="choose how many" min="1" max="5" step="1" autocomplete="on" style="width: 60px;">
+
+            <h4>Please choose a delivery date for your new car.</h4>
+            <label for="date">Date:</label>
+            <input type="date" name="date" min="1900-01-01" max="2024-12-31">
+            <br>
+            <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit"><a href='/homework_HTMLforms/submitpage.html'>Submit</a></button>
+        </form>
+    </main>
+    
+</body>
+</html>

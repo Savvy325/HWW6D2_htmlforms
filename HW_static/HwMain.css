@@ -1,0 +1,20 @@
+header {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #1900ff;
+    text-align: center;
+    
+}
+
+body {
+    background-color: #60837b80; /* Set your desired background color */
+}
+
+h3 {
+    color: white;
+    background-color: #0059ff;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
